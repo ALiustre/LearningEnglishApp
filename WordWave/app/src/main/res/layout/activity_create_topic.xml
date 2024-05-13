@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <EditText
+        android:id="@+id/title_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        />
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_edt"
+        android:text="Title"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="20dp"
+        android:id="@+id/create_topic_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="100dp"
+        android:layout_below="@+id/title_tv"
+        android:layout_above="@+id/bottom_buttons"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/add_description"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/remove_description"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/add_description"
+            android:text="-" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

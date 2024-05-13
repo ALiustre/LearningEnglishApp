@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_folder_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:id="@+id/folder_imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_folder_24"/>
+
+        <TextView
+            android:id="@+id/folder_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="folder name"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/folder_imageView"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/folder_image_view_user"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@+id/folder_name"
+            android:src="@drawable/default_avatar"
+            android:text="term number"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/folder_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/folder_name"
+            android:layout_marginStart="5sp"
+            android:layout_toRightOf="@+id/folder_image_view_user"
+            android:text="username"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

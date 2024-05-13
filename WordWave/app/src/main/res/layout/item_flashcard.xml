@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/flashcard_status_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="30/30"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        />
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/easyFlipView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:flipOnTouch="true"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        app:flipFrom="right"
+        app:flipType="horizontal"
+        app:autoFlipBack="false"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            app:cardCornerRadius="6dp"
+            android:elevation="6dp"
+            app:cardUseCompatPadding="true"
+            app:flipType="horizontal"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/definitionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            app:cardCornerRadius="6dp"
+            android:elevation="6dp"
+            app:cardUseCompatPadding="true"
+            app:flipType="horizontal"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/wordTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Word"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <ImageButton
+
+        android:id="@+id/term_speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/baseline_volume_up_24" />
+    <ImageButton
+
+        android:id="@+id/definition_speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/white"
+        android:clickable="false"
+        android:alpha="0"
+        android:src="@drawable/baseline_volume_up_24"
+        />
+    <LinearLayout
+        android:id="@+id/button_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/easyFlipView"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/flashcard_still_learn_btn"
+            android:layout_width="131dp"
+            android:layout_height="51dp"
+            android:background="@drawable/btn_next_back"
+            android:text="Still learning"
+            android:layout_gravity="start"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/flashcard_know_btn"
+            android:layout_width="131dp"
+            android:layout_height="51dp"
+            android:background="@drawable/btn_next_back"
+            android:text="Know"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_action"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/flashcard_finish_button"
+            android:layout_width="131dp"
+            android:layout_height="51dp"
+            android:background="@drawable/btn_next_back"
+            android:text="Finish"
+            android:layout_gravity="start"
+            android:enabled="false"
+            android:alpha="0"
+            />
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/flashcard_settings"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gear" />
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FillActivity">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="17dp"
+        android:layout_height="16dp"
+        android:text="30"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/timer__1_" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fill_settings"
+        app:layout_constraintEnd_toStartOf="@+id/fill_settings"
+        app:layout_constraintTop_toTopOf="@+id/fill_settings"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/question_mark_icon" />
+
+    <TextView
+        android:id="@+id/fill_numIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30/30"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <ImageButton
+
+            android:id="@+id/study_term_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@color/primary"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/baseline_volume_up_24" />
+
+        <TextView
+            android:id="@+id/fill_questionTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/fill_answer_edt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Your answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fill_check_btn"
+        android:layout_width="131dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/btn_next_back"
+        android:text="Check"
+
+        app:layout_constraintStart_toStartOf= "parent"
+        app:layout_constraintTop_toBottomOf="@+id/fill_answer_edt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fill_next_btn"
+        android:layout_width="131dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_next_back"
+        android:text="Next"
+        android:enabled="false"
+        android:alpha="0.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fill_answer_edt" />
+
+    <ImageView
+        android:id="@+id/fill_settings"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gear" />
+</androidx.constraintlayout.widget.ConstraintLayout>

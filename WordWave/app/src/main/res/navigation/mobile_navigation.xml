@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.wordwave.fragment.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.wordwave.fragment.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.wordwave.fragment.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.wordwave.fragment.Profile.ProfileFrament"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile_frament" />
+    <fragment
+        android:id="@+id/nav_change_password"
+        android:name="com.example.wordwave.fragment.changepassword.ChangePassword"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/nav_sign_out"
+        android:name="com.example.wordwave.fragment.signout.SignOut"
+        android:label="Sign out"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/nav_library"
+        android:name="com.example.wordwave.fragment.library.LibraryFragment"
+        android:label="Library"
+        tools:layout="@layout/fragment_library" />
+
+</navigation>

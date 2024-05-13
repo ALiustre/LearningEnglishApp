@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "917004474337",
+    "firebase_url": "https://learningenglish-3bdff-default-rtdb.firebaseio.com",
+    "project_id": "learningenglish-3bdff",
+    "storage_bucket": "learningenglish-3bdff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917004474337:android:267d0ba36f13bd8b6ce4a0",
+        "android_client_info": {
+          "package_name": "com.example.learningenglishapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917004474337-mkh6qtvhea8kkoji4l30jqpq2g567pmb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIf7UE8_Oj2h3AOb7DiSmTIxb3JLssgEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917004474337-mkh6qtvhea8kkoji4l30jqpq2g567pmb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917004474337:android:bdcd9025c9e14fb66ce4a0",
+        "android_client_info": {
+          "package_name": "com.example.wordwave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917004474337-mkh6qtvhea8kkoji4l30jqpq2g567pmb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIf7UE8_Oj2h3AOb7DiSmTIxb3JLssgEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917004474337-mkh6qtvhea8kkoji4l30jqpq2g567pmb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

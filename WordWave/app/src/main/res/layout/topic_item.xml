@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_topic_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/topic_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/term_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="term number"
+            android:textColor="@color/black"
+            android:layout_below="@+id/topic_name"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/term_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_name"
+            android:layout_marginStart="3sp"
+            android:layout_toRightOf="@+id/term_number_textview"
+            android:text="terms"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/topic_image_view_user"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@+id/term_text"
+            android:src="@drawable/default_avatar"
+            android:text="term number"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/topic_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/term_text"
+            android:layout_marginStart="5sp"
+            android:layout_toRightOf="@+id/topic_image_view_user"
+            android:text="username"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:enabled="false"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

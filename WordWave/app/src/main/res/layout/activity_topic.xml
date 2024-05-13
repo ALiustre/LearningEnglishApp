@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/alatsi"
+            android:text="topic name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            android:id="@+id/flashcard_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_name">
+
+            <!-- Your existing CardView content -->
+            <RelativeLayout
+                android:padding="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="6dp"
+                android:elevation="6dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:layout_marginStart="5dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/flashcard_image_view"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/flash_card_icon"/>
+
+                <TextView
+                    android:id="@+id/word_term1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flashcards"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/flashcard_image_view"/>
+                <TextView
+                    android:id="@+id/word_definition1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Review terms and definition"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/word_term1"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/flashcard_image_view"/>
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/study_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/flashcard_cardView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <!-- Your existing CardView content -->
+            <RelativeLayout
+                android:padding="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="6dp"
+                android:elevation="6dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <ImageView
+                    android:layout_marginStart="5dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/study_image_view"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/study_card_icon"/>
+
+                <TextView
+                    android:id="@+id/word_term2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Study"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/study_image_view"/>
+                <TextView
+                    android:id="@+id/word_definition2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Focus your studying"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/word_term2"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/study_image_view"/>
+
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            android:id="@+id/fill_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/study_cardView">
+
+            <!-- Your existing CardView content -->
+
+            <RelativeLayout
+                android:padding="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="6dp"
+                android:elevation="6dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:layout_marginStart="5dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/match_image_view"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/fill_icon"/>
+
+                <TextView
+                    android:id="@+id/word_term"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fill"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/match_image_view"/>
+                <TextView
+                    android:id="@+id/word_definition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fill in the words with suggestions"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/word_term"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/match_image_view"/>
+
+
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_below="@id/fill_cardView"
+            android:id="@+id/card_view_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/alatsi"
+            android:text="Cards"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topic_content_rcv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view_tv"
+            android:paddingStart="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
